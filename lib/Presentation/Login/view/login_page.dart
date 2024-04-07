@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                       email: LoginController.emailController.text,
                       password: LoginController.passwordController.text);
                   if (isChecked) {
-                    Navigator.push(context,
+                    Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) => HomePage()));
                   } else {
                     ScaffoldMessenger.of(context)
